@@ -23,4 +23,12 @@
       <_ContentIncludedByDefault Remove="wwwroot\js\scripts.js" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\dotnet-site-project.services\dotnet-site-project.services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Mail\Index.cshtml" />
+    </ItemGroup>
+
 </Project>

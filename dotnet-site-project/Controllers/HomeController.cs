@@ -15,9 +15,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        _logger.LogInformation("Open Main page");
         return View();
     }
-    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

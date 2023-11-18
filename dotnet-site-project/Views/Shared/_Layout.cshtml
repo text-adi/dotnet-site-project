@@ -6,11 +6,11 @@
     <title>@ViewData["Title"] - Healtly food</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-grid.min.css">
+    <script src="~/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
 <header class="promo">
@@ -19,22 +19,16 @@
 
             <nav class="promo_menu col">
                 <div class="promo_logo">
-                    <img src="icon/Logo.png" alt="logo" class="promo_logo_img">
-                    <img src="icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
+                    <img src="~/icon/Logo.png" alt="logo" class="promo_logo_img">
+                    <img src="~/icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
                 </div>
                 <div class="promo_link col">
                     <ul class="menu">
                         <li >
-                            <a href="#menu" class="menu_link">Menu</a>
+                            <a href="/" class="menu_link">Menu</a>
                         </li>
                         <li >
-                            <a href="#Recipes" class="menu_link">Recipes</a>
-                        </li>
-                        <li >
-                            <a href="#Chefs" class="menu_link">Chefs</a>
-                        </li>
-                        <li >
-                            <a href="#Contact" class="menu_link">Contacts</a>
+                            <a href="/mail" class="menu_link">Send Email</a>
                         </li>
                     </ul>
                 </div>
@@ -45,24 +39,26 @@
     <div class="underline"></div>
 </header>
 
+<main class="main-content">
+    @RenderBody()
+</main>
 
-@RenderBody()
 
 <footer class="foot">
     <div class="container">
         <div class="foot_in">
             <div class=" foot_in_info">
-                <img src="icon/ic_watch_later.png" alt="time" class="promo_in_info_img">
+                <img src="~/icon/ic_watch_later.png" alt="time" class="promo_in_info_img">
                 <div class="foot_in_info_head">Today 10:00 am - 7:00 pm</div>
                 <div class="foot_in_info_text">Working hours</div>
             </div>
             <div class=" foot_in_info">
-                <img src="icon/ic_near_me.png" alt="map" class="promo_in_info_img">
+                <img src="~/icon/ic_near_me.png" alt="map" class="promo_in_info_img">
                 <div class="foot_in_info_head">Velyka Vasylkivska 100</div>
                 <div class="foot_in_info_text">Get Directions</div>
             </div>
             <div class=" foot_in_info">
-                <img src="icon/ic_call.png" alt="call" class="promo_in_info_img">
+                <img src="~/icon/ic_call.png" alt="call" class="promo_in_info_img">
                 <div class="foot_in_info_head">+38 (063)833 24 15</div>
                 <div class="foot_in_info_text">Call Online</div>
             </div>
@@ -73,8 +69,8 @@
     <div class="foot_underline"></div>
     <div class="container">
         <div class="foot_logo">
-            <img src="icon/Logo.png" alt="logo" class="promo_logo_img">
-            <img src="icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
+            <img src="~/icon/Logo.png" alt="logo" class="promo_logo_img">
+            <img src="~/icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
         </div>
         <div class="foot_comercial">© Designed by Yellow Snow. All Rights Reserved. </div>
     </div>

@@ -1,13 +1,22 @@
+using dotnet_site_project.Middlewares;
+using InvertedSoftware.PLogger.Core;
 using dotnet_site_project.services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var settings = new PLoggerSettings(builder.Configuration);
+builder.Logging.ClearProviders();
+builder.Logging.AddPLogger(settings);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IEmailService,EmailService>();
 
+
 var app = builder.Build();
+
+app.UseMiddleware<LogsMiddleware>();
 
 
 // Configure the HTTP request pipeline.

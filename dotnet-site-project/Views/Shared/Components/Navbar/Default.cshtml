@@ -1,0 +1,33 @@
+<header class="promo">
+    <div class="container">
+        <div class="row">
+
+            <nav class="promo_menu col">
+                <div class="promo_logo">
+                    <img src="~/icon/Logo.png" alt="logo" class="promo_logo_img">
+                    <img src="~/icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
+                </div>
+                <div class="promo_link col">
+                    <ul class="menu">
+                        <li >
+                            <a href="/" class="menu_link">@SharedLocalizer["Menu"]</a>
+                        </li>
+                        <li >
+                            <a href="/mail" class="menu_link">@SharedLocalizer["SendEmail"]</a>
+                        </li>
+                        <li >
+                            <a href="/files" class="menu_link">@SharedLocalizer["Files"]</a>
+                        </li>
+                    </ul>
+                     <ul class="navbar-nav">
+                        <li>
+                            @await Html.PartialAsync("_LanguagePartial")
+                            </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <div class="underline"></div>
+</header>

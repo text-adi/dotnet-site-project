@@ -1,0 +1,44 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Not Found" xml:space="preserve">
+        <value>Не знайдено</value>
+    </data>
+    <data name="Today 10:00 am - 7:00 pm" xml:space="preserve">
+        <value>Сьогодні 10:00 am - 7:00 pm</value>
+    </data>
+    <data name="Working hours" xml:space="preserve">
+        <value>Робочі години</value>
+    </data>
+    <data name="Velyka Vasylkivska 100 " xml:space="preserve">
+        <value>Velyka Vasylkivska 100</value>
+    </data>
+    <data name="Get Directions" xml:space="preserve">
+        <value>Отримати розташування</value>
+    </data>
+    <data name="Call Online" xml:space="preserve">
+        <value>Позвонити онлайн</value>
+    </data>
+    <data name="Menu" xml:space="preserve">
+        <value>Меню</value>
+    </data>
+    <data name="SendEmail" xml:space="preserve">
+        <value>Надіслати лист</value>
+    </data>
+    <data name="Files" xml:space="preserve">
+        <value>Файли</value>
+    </data>
+    <data name="Main Page" xml:space="preserve">
+        <value>Головна</value>
+    </data>
+</root>

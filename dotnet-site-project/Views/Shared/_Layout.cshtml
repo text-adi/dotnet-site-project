@@ -25,14 +25,19 @@
                 <div class="promo_link col">
                     <ul class="menu">
                         <li >
-                            <a href="/" class="menu_link">Menu</a>
+                            <a href="/" class="menu_link">@SharedLocalizer["Menu"]</a>
                         </li>
                         <li >
-                            <a href="/mail" class="menu_link">Send Email</a>
+                            <a href="/mail" class="menu_link">@SharedLocalizer["SendEmail"]</a>
                         </li>
                         <li >
-                            <a href="/files" class="menu_link">Files</a>
+                            <a href="/files" class="menu_link">@SharedLocalizer["Files"]</a>
                         </li>
+                    </ul>
+                     <ul class="navbar-nav">
+                        <li>
+                            @await Html.PartialAsync("_LanguagePartial")
+                            </li>
                     </ul>
                 </div>
 
@@ -52,18 +57,18 @@
         <div class="foot_in">
             <div class=" foot_in_info">
                 <img src="~/icon/ic_watch_later.png" alt="time" class="promo_in_info_img">
-                <div class="foot_in_info_head">Today 10:00 am - 7:00 pm</div>
-                <div class="foot_in_info_text">Working hours</div>
+                <div class="foot_in_info_head">@SharedLocalizer["Today 10:00 am - 7:00 pm"]</div>
+                <div class="foot_in_info_text">@SharedLocalizer["Working hours"]</div>
             </div>
             <div class=" foot_in_info">
                 <img src="~/icon/ic_near_me.png" alt="map" class="promo_in_info_img">
-                <div class="foot_in_info_head">Velyka Vasylkivska 100</div>
-                <div class="foot_in_info_text">Get Directions</div>
+                <div class="foot_in_info_head">@SharedLocalizer["Velyka Vasylkivska 100"]</div>
+                <div class="foot_in_info_text">@SharedLocalizer["Get Directions"]</div>
             </div>
             <div class=" foot_in_info">
                 <img src="~/icon/ic_call.png" alt="call" class="promo_in_info_img">
-                <div class="foot_in_info_head">+38 (063)833 24 15</div>
-                <div class="foot_in_info_text">Call Online</div>
+                <div class="foot_in_info_head">@SharedLocalizer["+38 (063)833 24 15"]</div>
+                <div class="foot_in_info_text">@SharedLocalizer["Call Online"]</div>
             </div>
         </div>
 
@@ -75,7 +80,7 @@
             <img src="~/icon/Logo.png" alt="logo" class="promo_logo_img">
             <img src="~/icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
         </div>
-        <div class="foot_comercial">© Designed by Yellow Snow. All Rights Reserved. </div>
+        <div class="foot_comercial">@SharedLocalizer["© Designed by Yellow Snow. All Rights Reserved."]</div>
     </div>
 </footer>
 </body>

@@ -15,6 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.9.0" />
       <PackageReference Include="InvertedSoftware.PLogger.Core" Version="1.0.0" />
       <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
     </ItemGroup>

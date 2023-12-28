@@ -25,6 +25,20 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    public IActionResult Create()
+    {
+        return View();
+    }
+    [HttpPost]
+    public IActionResult Create(LoginModel person)
+    {
+        if (ModelState.IsValid)
+            return Content($"{person.Id} - {person.Name} - {person.Name2} - {person.Name3} - {person.Name4} - {person.Name5} - {person.Name6} - {person.Name7} - {person.Name8} - {person.Name9}");
+        else
+        {
+            return View(person);            
+        }
+    }
     [HttpPost]
     public IActionResult SetLanguage(string culture, string returnUrl)
     {

@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model dotnet_site_project.Models.LoginModel
+<form asp-antiforgery="true" asp-action="Create" aspcontroller="Home">
+    <div>
+        <div class="validation" asp-validationsummary="ModelOnly"></div>
+        <div>
+            <label asp-for="Id"></label><br/>
+            <input type="text" asp-for="Id"/>
+            <span asp-validation-for="Id"></span>
+        </div>
+        <div>
+            <label asp-for="Name"></label><br/>
+            <input asp-for="Name"/>
+            <span asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <label asp-for="Name2"></label><br/>
+            <input asp-for="Name2"/>
+        </div>
+        <div>
+            <label asp-for="Name3"></label><br/>
+            <input asp-for="Name3"/>
+        </div>
+        <div>
+            <label asp-for="Name4"></label><br/>
+            <input asp-for="Name4"/>
+        </div>
+        <div>
+            <label asp-for="Name5"></label><br/>
+            <input asp-for="Name5"/>
+        </div>
+        <div>
+            <label asp-for="Name6"></label><br/>
+            <input asp-for="Name6"/>
+        </div>
+        <div>
+            <label asp-for="Name7"></label><br/>
+            <input asp-for="Name7"/>
+        </div>
+        <div>
+            <label asp-for="Name8"></label><br/>
+            <input asp-for="Name8"/>
+        </div>
+        <div>
+            <label asp-for="Name9"></label><br/>
+            <input asp-for="Name9"/>
+        </div>
+        
+        <div>
+            <input type="submit" value="Save"/>
+        </div>
+    </div>
+</form>
